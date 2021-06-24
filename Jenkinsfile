@@ -39,7 +39,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 
-                    bat 'tomcat7:run-war'
+                    bat 'mvn install tomcat7:run-war'
                 
             }
         }
