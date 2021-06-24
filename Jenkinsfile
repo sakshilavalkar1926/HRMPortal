@@ -39,7 +39,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
                 
-                    bat 'mvn install -Dmaven.tomcat.port=8181 tomcat7:run-war'
+                    bat 'mvn install tomcat7:deploy -Djava.net.preferIPv4Stack=true'
                 
             }
         }
