@@ -13,7 +13,7 @@ pipeline {
 
             steps {
                 
-                    bat 'mvn compile'
+                    bat 'mvn clean compile'
                 
             }
         }
