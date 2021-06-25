@@ -125,7 +125,14 @@
 	    <groupId>org.apache.tomcat.maven</groupId>
 	    <artifactId>tomcat7-maven-plugin</artifactId>
 	    <version>2.2</version>
-	   
+	   <configuration>
+		<url>http://localhost:8081/manager/text</url>
+		<server>TomcatServer</server>
+		<username>tomcat</username>
+        	<password>tomcat-admin@password</password>
+		<path>/HRMPortal</path>
+		<update>true</update>
+	    </configuration>
 	</plugin>
     </plugins>
 
